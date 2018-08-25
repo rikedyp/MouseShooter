@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://player.gd" type="Script" id=1]
+[ext_resource path="res://ninja/5x/idle_0.png" type="Texture" id=2]
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+speed = 300
+
+[node name="idle_0" type="Sprite" parent="." index="0"]
+
+position = Vector2( -1.25787, -2.53061 )
+texture = ExtResource( 2 )
+
+
